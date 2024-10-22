@@ -11,6 +11,7 @@ import Services from './Components/HomePage/Services';
 import Products from "./Components/HomePage/Product.jsx";
 import Team from "./Components/HomePage/Team.jsx";
 import ContactUs from './Pages/Contact/ContactUs';
+import Blogs from "./Pages/Blogs/Blogs.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs></ContactUs>,
+      },
+      {
+        path: "/blog",
+        element: <Blogs></Blogs>,
       },
     ],
   },

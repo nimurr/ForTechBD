@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 export default function FooterMain() {
   return (
-    <div className="bg-[url('https://bdcalling.com/wp-content/themes/bdcalling/assets/images/map.png')]">
-      <footer className="bg-[#000000f0] text-white dark:bg-gray-900 ">
+    <div className="bg-[url('https://bdcalling.com/wp-content/themes/bdcalling/assets/images/map.png')] ">
+      <footer className="bg-[#000000f0] h-full w-full text-white dark:bg-gray-900 ">
         <div className="lg:w-[90%] w-[95%] mx-auto">
           <div className="grid sm:grid-cols-2 gap-8 py-6 lg:py-8 md:grid-cols-4">
             <div>
@@ -96,22 +96,21 @@ export default function FooterMain() {
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold  uppercase text-white">
-                Download
+                Email
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4 hover:text-primary">
-                  <a href="#" className="hover:underline flex items-start gap-3">
-                    Our Android App
-                    <img className="w-8" src="https://res.cloudinary.com/nerob/image/upload/v1729072597/itg4lbho6byww0p73afv.png" alt="" />
-                  </a>
+                  <Link to={'https://mail.google.com/mail/u/0/?fs=1&to=nimurnerob404@gmail.com&tf=cm'}  className="hover:underline flex items-start gap-3">
+                    Email: nimurnerob404@gmail.com
+                  </Link>
+                </li>
+                <li className="mb-4 hover:text-primary">
+                  <Link to={`tel:01740189038`}  className="hover:underline flex items-start gap-3">
+                   Phone: +88 01740189038
+                  </Link>
                 </li>
               </ul>
-            </div>
-            {/* <div>
-              <h2 className="dark:text-white font-semibold text-xl mb-2">Email</h2>
-              <input className="p-2 rounded bg-transparent dark:text-white" type="email" placeholder="Your Email" name="email" />
-              <button className="bg-gradient-primary mt-2 py-2 px-5 rounded text-white">Subscribe</button>
-            </div> */}
+            </div> 
           </div>
 
           <div className="px-4 py-6 bg-gray-800 dark:bg-gray-700 md:flex md:items-center md:justify-between">

@@ -66,9 +66,10 @@ export default function Header() {
                 <Drawer.Header />
                 <Drawer.Items>
                   <div className="flex flex-col gap-5 my-10">
-                    <Link to={"/services"}>Services</Link>
                     <Link to={"/products"}>Product</Link>
+                    <Link to={"/services"}>Services</Link>
                     <Link to={"/team"}>Team</Link>
+                    <Link to={"/blog"}>Blog</Link>
                     <Link to={"/career"}>Career</Link>
                     <Link to={"/contact"}>Contact</Link>
                     <Link
@@ -91,9 +92,10 @@ export default function Header() {
 
           <Navbar.Collapse className={`${menu ? "block" : "hidden"}`}>
             <div className="sm:flex flex-wrap items-center xl:gap-8 gap-5 sm:mt-0 mt-5">
-              <Link to={"/services"}>Services</Link>
               <Link to={"/products"}>Product</Link>
+              <Link to={"/services"}>Services</Link>
               <Link to={"/team"}>Team</Link>
+              <Link to={"/blog"}>Blog</Link>
               <Link to={"/career"}>Career</Link>
               <Link to={"/contact"}>Contact</Link>
               <Link

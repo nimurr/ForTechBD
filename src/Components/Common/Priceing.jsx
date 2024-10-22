@@ -57,7 +57,7 @@ const Pricing = () => {
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
-            className={`w-full relative p-6 pb-10 border border-gray-300 rounded-lg bg-white text-center shadow-lg hover:scale-110 duration-300 ${plan?.big && 'scale-110'}`}
+            className={`w-full relative p-6 pb-10 border border-gray-300 rounded-lg bg-white text-center shadow-lg sm:hover:scale-110 duration-300 ${plan?.big && 'sm:scale-110'}`}
           >
             <img
               className="w-[60%] h-[25vh] mx-auto my-5 rounded-lg"
