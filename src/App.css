@@ -34,6 +34,10 @@ body {
   background: #0186ff;
 }
 
+.active{
+  color: #0186ff;
+}
+
 .headingFont{
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto; 

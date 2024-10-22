@@ -6,9 +6,6 @@ import { toast, ToastContainer } from "react-toastify";
 
 export default function ContactUs() {
  
-  
-
-
 
   const handleCustomerMessage = async (e) => {
     e.preventDefault();

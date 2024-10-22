@@ -59,8 +59,8 @@ const Team = () => {
   ];
 
   return (
-    <div className="lg:w-[90%] w-[95%] mx-auto lg:my-20 my-10">
-      <h2 className="text-center text-3xl font-bold lg:mt-20 mt-10 mb-10">
+    <div className="lg:w-[90%] w-[95%] mx-auto my-10">
+      <h2 className="text-center text-3xl font-bold mb-10">
         OUR TEAM
       </h2>
       <div>

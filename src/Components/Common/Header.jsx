@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 import { MdCall } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import HeaderTop from "./HeaderTop";
 
 export default function Header() {
@@ -66,22 +66,22 @@ export default function Header() {
                 <Drawer.Header />
                 <Drawer.Items>
                   <div className="flex flex-col gap-5 my-10">
-                    <Link to={"/products"}>Product</Link>
-                    <Link to={"/services"}>Services</Link>
-                    <Link to={"/team"}>Team</Link>
-                    <Link to={"/blog"}>Blog</Link>
-                    <Link to={"/career"}>Career</Link>
-                    <Link to={"/contact"}>Contact</Link>
-                    <Link
+                    <NavLink to={"/products"}>Product</NavLink>
+                    <NavLink to={"/services"}>Services</NavLink>
+                    <NavLink to={"/team"}>Team</NavLink>
+                    <NavLink to={"/blog"}>Blog</NavLink>
+                    <NavLink to={"/career"}>Career</NavLink>
+                    <NavLink to={"/contact"}>Contact</NavLink>
+                    <NavLink
                       to={`tel:01740189038`}
-                      className="xl:flex hidden gap-1 items-center cursor-pointer"
+                      className="border-primary border-2 rounded-md justify-center flex gap-1 items-center cursor-pointer"
                     >
                       <MdCall className="text-primary text-3xl rotate-[35deg]" />
                       <div>
                         <h2>Call Us Now:</h2>
                         <h3>+88 01740189038</h3>
                       </div>
-                    </Link>
+                    </NavLink>
                   </div>
                 </Drawer.Items>
               </Drawer>
@@ -92,13 +92,14 @@ export default function Header() {
 
           <Navbar.Collapse className={`${menu ? "block" : "hidden"}`}>
             <div className="sm:flex flex-wrap items-center xl:gap-8 gap-5 sm:mt-0 mt-5">
-              <Link to={"/products"}>Product</Link>
-              <Link to={"/services"}>Services</Link>
-              <Link to={"/team"}>Team</Link>
-              <Link to={"/blog"}>Blog</Link>
-              <Link to={"/career"}>Career</Link>
-              <Link to={"/contact"}>Contact</Link>
-              <Link
+              <NavLink to={"/"}>Home</NavLink>
+              <NavLink to={"/products"}>Product</NavLink>
+              <NavLink to={"/services"}>Services</NavLink>
+              <NavLink to={"/team"}>Team</NavLink>
+              <NavLink to={"/blog"}>Blog</NavLink>
+              <NavLink to={"/career"}>Career</NavLink>
+              <NavLink to={"/contact"}>Contact</NavLink>
+              <NavLink
                 to={`tel:01740189038`}
                 className="xl:flex hidden gap-1 items-center cursor-pointer"
               >
@@ -107,7 +108,7 @@ export default function Header() {
                   <h2>Call Us Now:</h2>
                   <h3>+88 01740189038</h3>
                 </div>
-              </Link>
+              </NavLink>
             </div>
           </Navbar.Collapse>
         </Navbar>

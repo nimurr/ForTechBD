@@ -10,7 +10,7 @@ export default function About() {
         <p>We are a dynamic software company dedicated to delivering innovative solutions that meet the unique needs of businesses. Our team of skilled developers and tech experts work closely with clients to create custom software that enhances efficiency, drives growth, and fosters success. With a passion for technology and a commitment to excellence, we help businesses harness the power of digital transformation to achieve their goals.</p>
         <Link to={'/contact'} className=" mt-5 flex  justify-center text-center py-2 px-8 bg-primary text-white font-semibold w-48">Contact Us</Link>
       </div>
-      <div>
+      <div className="sm:block hidden">
         <img className="w-full h-[80%]" src="https://res.cloudinary.com/nerob/image/upload/v1729538301/ForTech/mwmlhyt2ciyxc0bf9cie.webp" alt="" />
       </div>
     </div>
