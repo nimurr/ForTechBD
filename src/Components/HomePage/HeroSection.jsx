@@ -42,7 +42,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="bg-[url('https://themetechmount.com/html/altech-advanced/images/slider-main-01.png')] md:min-h-[90vh] min-h-[60vh] py-10 flex justify-center items-center relative overflow-hidden z-0">
+    <div className="bg-[url('https://res.cloudinary.com/nerob/image/upload/v1729594263/ForTech/qirsozyagfvhznfnpeo9.png')] md:min-h-[90vh] min-h-[60vh] py-10 flex justify-center items-center relative overflow-hidden z-0">
       <div>
         {/* Using Framer Motion for Fade-In Animation */}
         <motion.h2
@@ -83,9 +83,15 @@ export default function HeroSection() {
       
       <img
         className="absolute right-0 opacity-40 -z-[1]"
-        src="https://themetechmount.com/html/altech-advanced/images/bgimg01.png"
+        src="https://res.cloudinary.com/nerob/image/upload/v1729594264/ForTech/xa8yqog75qvio48za9si.png"
         alt=""
       />
+{/*       
+      <img
+        className="absolute right-0 opacity-40 -z-[1]"
+        src="https://themetechmount.com/html/altech-advanced/images/bgimg01.png"
+        alt=""
+      /> */}
     </div>
   );
 }
