@@ -26,7 +26,7 @@ const Team = () => {
       role: "Senior Advisor",
       bio: "Expert in employee management, organizational behavior, enhancing team performance, workplace culture",
       image:
-        "https://res.cloudinary.com/nerob/image/upload/v1729584833/ForTech/bsctxespcqdaxhhsj3ci.jpg",
+        "https://res.cloudinary.com/nerob/image/upload/v1729594817/ForTech/ejt0bggxrhzqf0c2uwr8.jpg",
     },
     {
       name: "AS Sabbir",
