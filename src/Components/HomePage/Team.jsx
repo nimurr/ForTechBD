@@ -5,7 +5,7 @@ const Team = () => {
       role: " Founder & CEO",
       bio: "Visionary leader with 2+ years in software development.",
       image:
-        "https://res.cloudinary.com/nerob/image/upload/v1729571486/ForTech/aqmakqezowf7iem1ael3.png",
+        "https://res.cloudinary.com/nerob/image/upload/v1729591498/ForTech/xy2mr25oeneq5quu9k0f.jpg",
     },
     {
       name: "Mujahidul Islam",
@@ -70,7 +70,7 @@ const Team = () => {
           <img
             src={teamMembers[0].image}
             alt={teamMembers[0].name}
-            className="w-full mb-5 rounded border-2 border-primary overflow-hidden"
+            className="w-full mb-5 overflow-hidden"
           />
           <div className="p-3">
             <h2 className="text-2xl font-semibold mb-2">{teamMembers[0].name}</h2>
