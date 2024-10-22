@@ -49,9 +49,9 @@ export default function HeroSection() {
           initial="initial"
           animate="animate"
           variants={fadeIn}
-          className="text-center md:text-3xl text-xl font-semibold text-[#d0d0d0]"
+          className="text-center md:text-3xl text-xl font-semibold text-blue-50"
         >
-          Your Vision, Our Mission
+          Smart Software For Smart Business
         </motion.h2>
         
         <motion.h2
