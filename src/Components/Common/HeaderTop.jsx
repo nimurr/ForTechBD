@@ -16,16 +16,13 @@ export default function HeaderTop() {
             {/* <Link className="flex items-center gap-1" to={"/"}>
               <FaLocationDot className="sm:text-lg text-primary" /> Order Tracking{" "}
             </Link> */}
-            <Link className="flex items-center gap-1" to={"/about-us"}>
+            <Link className="flex items-center gap-1" to={"https://www.facebook.com/profile.php?id=61564583527835"}>
               <FaFacebook className="sm:text-xl text-sm text-primary" />
             </Link>
             <Link className="flex items-center gap-1" to={`https://api.whatsapp.com/send/?phone=%2B8801740189038&text&type=phone_number&app_absent=0`}>
               <IoLogoWhatsapp className="sm:text-xl text-sm text-primary" />
-            </Link>
+            </Link> 
             <Link className="flex items-center gap-1" to={"https://www.linkedin.com/company/fortechbd"}>
-              <FaInstagramSquare className="sm:text-xl text-sm text-primary" />{" "}
-            </Link>
-            <Link className="flex items-center gap-1" to={"/contact-us"}>
               <FaLinkedin className="sm:text-xl text-sm text-primary" />{" "}
             </Link>
           </ul>
