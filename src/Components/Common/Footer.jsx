@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export default function FooterMain() {
   return (
-    <div className="bg-[url('https://bdcalling.com/wp-content/themes/bdcalling/assets/images/map.png')] ">
+    <div className="bg-[url('https://bdcalling.com/wp-content/themes/bdcalling/assets/images/map.png')] bg-no-repeat">
       <footer className="bg-[#000000f0] h-full w-full text-white dark:bg-gray-900 ">
         <div className="lg:w-[90%] w-[95%] mx-auto">
           <div className="grid sm:grid-cols-2 gap-8 py-6 lg:py-8 md:grid-cols-4">
@@ -21,7 +21,7 @@ export default function FooterMain() {
                 wardrobe.
               </p>
               <p className="dark:text-white text-sm mt-2">
-                Email : sopnerpesha24@gmail.com
+                Email : fortechbd24@gmail.com
               </p>
               <p className="dark:text-white text-sm mt-2">
                 Address : Mirpur-11 , Dhaka-1216 , Bangladesh
@@ -101,12 +101,12 @@ export default function FooterMain() {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4 hover:text-primary">
                   <Link to={'https://mail.google.com/mail/u/0/?fs=1&to=nimurnerob404@gmail.com&tf=cm'}  className="hover:underline flex items-start gap-3">
-                    Email: nimurnerob404@gmail.com
+                    Email: fortechbd24@gmail.com
                   </Link>
                 </li>
                 <li className="mb-4 hover:text-primary">
-                  <Link to={`tel:01740189038`}  className="hover:underline flex items-start gap-3">
-                   Phone: +88 01740189038
+                  <Link to={`tel:01852219894`}  className="hover:underline flex items-start gap-3">
+                   Phone: +88 01852219894
                   </Link>
                 </li>
               </ul>
@@ -118,7 +118,7 @@ export default function FooterMain() {
               © 2023 <a href="https://flowbite.com/">fortechbd.com™</a>. All
               Rights Reserved. Created By{" "}
               <span className="font-bold text-primary dark:text-white">
-                Nimur Rahman Nerob
+              For Tech BD
               </span>
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
@@ -216,8 +216,7 @@ export default function FooterMain() {
             </div>
           </div>
         </div>
-      </footer>
-      <br className="md:hidden"/>
+      </footer> 
     </div>
   );
 }

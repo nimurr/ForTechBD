@@ -1,8 +1,11 @@
 
+import axios from "axios";
 import { FaPhone } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function ContactUs() {
  
@@ -15,15 +18,33 @@ export default function ContactUs() {
     const phone = form.phone.value;
     const message = form.message.value;
     const formData = { name, email, phone, message };
+
+    axios.post('http://localhost:5000/all-client-message' , formData)
+    .then(res =>{
+      if(res.data){
+        toast.success('Message Send Successfully  !!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light", 
+          });
+          form.reset();
+      }
+    })
+
    console.log(formData)
   };
 
   return (
     <div className="lg:w-[90%] w-[95%] mx-auto">
        <ToastContainer />
-      <div className="relative bg-cover bg-center bg-[url('https://static.vecteezy.com/system/resources/previews/017/165/756/non_2x/transparent-background-abstract-background-free-png.png')] sm:h-[150px] flex flex-col items-center justify-center h-[25vh]">
+      <div className="relative bg-cover bg-center bg-[url('https://static.vecteezy.com/system/resources/previews/017/165/756/non_2x/transparent-background-abstract-background-free-png.png')] sm:h-[150px] h-[120px] flex flex-col items-center justify-center">
         <h1 className="text-white text-4xl font-bold">Contact Us</h1>  
-        <h1 className="text-white text-xl font-semibold mt-3">For Order / Information</h1>
+        <h1 className="text-white text-xl font-semibold sm:mt-3">For Order / Information</h1>
       </div>
       <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-5 my-10">
         <div className="p-5 border rounded-md bg-white">
@@ -31,21 +52,21 @@ export default function ContactUs() {
             <FaMapLocationDot /> Location
           </h2>
           <p className="mt-2">
-            Office: House: Mirpur-11 , Dhaka , Bangladesh <br /> E-mail: fortechbd24@gmial.com <br /> Hot Line:
-            +88 01740189038
+            Office: House: Mirpur-11 , Dhaka , Bangladesh <br /> E-mail: fortechbd24@gmail.com            <br /> Hot Line:
+            +88 01852219894
           </p>
         </div>
         <div className="p-5 border rounded-md bg-white">
           <h2 className="text-xl font-semibold flex items-center gap-2">
             <FaPhone className="rotate-90" /> Phone
           </h2>
-          <p className="mt-2"> Hot Line: +88 01740189038</p>
+          <p className="mt-2"> Hot Line: +88 01852219894</p>
         </div>
         <div className="p-5 border rounded-md bg-white">
           <h2 className="text-xl font-semibold flex items-center gap-2">
             <MdEmail /> Email
           </h2>
-          <p className="mt-2"> E-mail:  fortechbd24@gmial.com</p>
+          <p className="mt-2"> E-mail:  fortechbd24@gmail.com   </p>
         </div>
       </div>
       <div className="mb-10">
@@ -75,9 +96,10 @@ export default function ContactUs() {
             placeholder="Your Phone"
           />
           <textarea
-            className="w-full mb-2 border-[#eee] border-2 rounded-sm"
+            className="w-full mb-2 border-[#eee] min-h-[150px] border-2 rounded-sm"
             name="message"
             placeholder="Your Message"
+            
             id=""
           ></textarea>
           <input

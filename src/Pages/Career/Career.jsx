@@ -48,7 +48,7 @@ export default function Career() {
                 <p className="text-gray-700 mb-4">{position?.description}</p>
                 <Link
                   to={
-                    "https://mail.google.com/mail/u/0/?fs=1&to=nimurnerob404@gmail.com&tf=cm"
+                    "https://mail.google.com/mail/u/0/?fs=1&to=fortechbd24@gmail.com&tf=cm"
                   }
                   className="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-300"
                 >

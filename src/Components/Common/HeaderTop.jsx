@@ -7,8 +7,8 @@ export default function HeaderTop() {
     <div className=" border-b">
       <div className="flex sm:justify-between justify-center lg:w-[90%] w-[95%] mx-auto py-2">
         <div className="sm:block hidden">
-          <Link to={"/"} className="font-semibold text-primary">
-            support@fortechbd.com
+          <Link to={"https://mail.google.com/mail/u/0/?fs=1&to=fortechbd24@gmail.com&tf=cm"} className="font-semibold text-primary">
+            fortechbd24@gmail.com
           </Link>
         </div>
         <div>
@@ -22,7 +22,7 @@ export default function HeaderTop() {
             <Link className="flex items-center gap-1" to={`https://api.whatsapp.com/send/?phone=%2B8801740189038&text&type=phone_number&app_absent=0`}>
               <IoLogoWhatsapp className="sm:text-xl text-sm text-primary" />
             </Link>
-            <Link className="flex items-center gap-1" to={"/contact-us"}>
+            <Link className="flex items-center gap-1" to={"https://www.linkedin.com/company/fortechbd"}>
               <FaInstagramSquare className="sm:text-xl text-sm text-primary" />{" "}
             </Link>
             <Link className="flex items-center gap-1" to={"/contact-us"}>

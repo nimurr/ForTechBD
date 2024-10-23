@@ -42,7 +42,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="bg-[url('https://res.cloudinary.com/nerob/image/upload/v1729594263/ForTech/qirsozyagfvhznfnpeo9.png')] md:min-h-[90vh] min-h-[60vh] py-10 flex justify-center items-center relative overflow-hidden z-0">
+    <div className="bg-[url('https://res.cloudinary.com/nerob/image/upload/v1729594263/ForTech/qirsozyagfvhznfnpeo9.png')] md:min-h-[90vh] min-h-[60vh] md:max-h-[100] max-h-[60vh] py-10 flex justify-center items-center relative overflow-hidden z-0">
       <div>
         {/* Using Framer Motion for Fade-In Animation */}
         <motion.h2
@@ -59,7 +59,7 @@ export default function HeroSection() {
           animate="animate"
           variants={fadeIn}
           transition={{ delay: 0.2 }} // Delay for staggered effect
-          className="headingFont leading-[1.2] md:my-10 my-5 text-white xl:text-[7rem] md:text-[4rem] text-[2.5rem] font-bold w-[90%] mx-auto text-center"
+          className="headingFont leading-[1.2] md:my-10 my-10 text-white xl:text-[7rem] md:text-[4rem] text-[2.5rem] font-bold w-[90%] mx-auto text-center"
         >
           Software Solutions For Your Business.
         </motion.h2>
@@ -73,7 +73,7 @@ export default function HeroSection() {
           >
             <Link
               to={"/products"}
-              className="min-w-48 mt-5 py-3 px-8 cursor-pointer bg-primary text-white font-semibold text-center max-w-48"
+              className="min-w-48 mt-20 py-3 px-8 cursor-pointer bg-primary text-white font-semibold text-center max-w-48"
             >
               Get Start
             </Link>
