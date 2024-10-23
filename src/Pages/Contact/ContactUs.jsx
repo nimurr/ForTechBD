@@ -19,7 +19,7 @@ export default function ContactUs() {
     const message = form.message.value;
     const formData = { name, email, phone, message };
 
-    axios.post('http://localhost:5000/all-client-message' , formData)
+    axios.post('https://fortech-bd-server-git-main-neorbislams-projects.vercel.app/all-client-message' , formData)
     .then(res =>{
       if(res.data){
         toast.success('Message Send Successfully  !!', {
